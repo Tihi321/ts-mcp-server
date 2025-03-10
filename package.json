@@ -1,0 +1,25 @@
+{
+  "name": "ts-mcp-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Tihi321/ts-mcp-server.git",
+  "author": "Tihomir Selak <tknox.dr@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "weather": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.3.3"
+  }
+}
